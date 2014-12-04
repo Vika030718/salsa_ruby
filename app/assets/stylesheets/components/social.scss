@@ -1,0 +1,47 @@
+    .social-networcs-links{
+      width: 115px;
+      position: relative;
+      text-align: left;
+
+      li {
+        width: 25px;
+        height: 25px;
+        float: left;
+        margin-right: 5px;
+        list-style-type: none;
+
+        &:before{
+          content: '';
+          position: absolute;
+          width: 25px;
+          height: 25px;
+        }
+
+        &:nth-last-child(1){margin-right: 0px;
+        img:hover{      }
+        }
+      }
+
+      li.vk:before{background-image: image-url('components/social/icon-vk-small-mutted.png');}
+      li.fb:before{background-image: image-url('components/social/icon-fb-small-mutted.png');}
+      li.tw:before{background-image: image-url('components/social/icon-tv-small-mutted.png');}
+      li.gl:before{background-image: image-url('components/social/icon-g-small-mutted.png');}
+
+      li.vk:hover:before{
+         background-image: image-url('components/social/icon-vk-small.png');
+         cursor: pointer;
+      }
+      li.fb:hover:before{
+         background-image: image-url('components/social/icon-fb-small.png');
+         cursor: pointer;
+      }
+      li.tw:hover:before{
+         background-image: image-url('components/social/icon-tv-small.png');
+         cursor: pointer;
+      }
+      li.gl:hover:before{
+         background-image: image-url('components/social/icon-g-small.png');
+         cursor: pointer;
+      }
+  }
+

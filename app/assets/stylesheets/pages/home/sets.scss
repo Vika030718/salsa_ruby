@@ -1,0 +1,33 @@
+.sets-i-wrapper{
+  .sets-i{
+    display: table;
+    width: 100%;
+
+    div{
+      display: table-row;
+    }
+
+    span{
+      display: table-cell;
+      width: 50%;
+    }
+  }
+
+  .show-more{
+    margin-top: 5%;
+    float: none;
+    text-align: left;
+
+    &:after{
+    content: ''!important;
+    width: 0!important;
+    height: 0!important;
+    }
+  }
+}
+
+
+
+
+
+

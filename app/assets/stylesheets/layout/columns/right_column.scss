@@ -1,0 +1,17 @@
+.right-column-i{
+  margin-bottom: 7.5%;
+  background-color: rgb(255, 255, 255);
+  padding: 7.35% 8.82%;
+  position: relative!important;
+
+  &:before{
+   content: '';
+   height: 5px;
+   width: 100%;
+   background: $color-blue;
+   position: absolute;
+   top: 0px;
+   left: 0;
+  }
+}
+

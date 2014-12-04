@@ -1,0 +1,6 @@
+select{
+  text-indent: 5%;
+  color: $color-grey-super-strong;
+  @include selector-aligne;
+  @include form_elements;
+}

@@ -1,0 +1,33 @@
+.header-city{
+  float: right!important;
+  margin-right: 0!important;
+  padding: 0 0 3% 0;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+
+  select{
+    width: 70%;
+    text-indent: 5%;
+    margin-left: 2%;
+  }
+
+  span{
+    font-weight: bold;
+  }
+
+  @include breakpoint(xs) {
+    padding: 0 0 2% 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+

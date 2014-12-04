@@ -1,0 +1,74 @@
+#top, header{
+	min-height: 27%;
+	min-height: 200px;
+
+@include breakpoint(sm) {
+		height: 140px;
+		min-height: 0;
+	}
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	background: $color-heder;
+	// background-color: rgba(255, 255, 255, 1);
+	z-index: 5;
+
+	.header-wrapper{
+		height: 80%;
+		max-width: 1200px;
+		width: 95%;
+		margin: auto;
+		overflow: hidden;
+	}
+
+	.header-line{
+		position: relative;
+		display: none;
+		height: 5px;
+		background: $color-grey;
+	}
+
+	.col-1, .col-2, .col-3, .col-4, .col-5{
+		float: none;
+	}
+
+	@include breakpoint(sm) {
+		position: fixed;
+
+		.header-wrapper{
+			height: 110px;
+			display: table;
+		}
+
+		.header-line{
+			display: block;
+		}
+
+		#main-menu, .logo, .header-login{
+			display: table-cell;
+			vertical-align: middle;
+			height: 100%;
+			float: none!important;
+			text-align: left;
+			padding: 0;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

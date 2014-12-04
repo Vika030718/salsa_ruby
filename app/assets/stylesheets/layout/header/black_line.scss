@@ -1,0 +1,113 @@
+.header-black{
+  display: table;
+  vertical-align: middle;
+  height: 30px;
+  background-color: $color-black-light;
+  width: 100%;
+  font-size: 0.8em;
+  color: $color-white!important;
+  padding: 0 1%;
+  letter-spacing: 1px;
+
+    .news-line, .login-lable{
+      display: none;
+    }
+
+    ul{
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .login-wrapper{
+      width: 100%;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+
+      ul{
+        position: relative;
+        text-align: left;
+      }
+
+      li{
+      width: 25px;
+      height: 25px;
+      float: left;
+      line-height: 0;
+      padding: 0;
+      margin-right: 5px;
+
+      &:hover{cursor: pointer;}
+      }
+
+      li:before{
+        content: '';
+        width: 25px;
+        height: 25px;
+        position: absolute;
+      }
+
+      li.vk:before{background-image: image-url('components/login/vk.png');}
+      li.fb:before{background-image: image-url('components/login/fb.png');}
+      li.tw:before{background-image: image-url('components/login/tw.png');}
+      li.gl:before{background-image: image-url('components/login/gl.png');}
+
+      li.vk:hover:before{
+         background-image: image-url('components/social/icon-vk-small.png');
+         cursor: pointer;
+      }
+      li.fb:hover:before{
+         background-image: image-url('components/social/icon-fb-small.png');
+         cursor: pointer;
+      }
+      li.tw:hover:before{
+         background-image: image-url('components/social/icon-tv-small.png');
+         cursor: pointer;
+      }
+      li.gl:hover:before{
+         background-image: image-url('components/social/icon-g-small.png');
+         cursor: pointer;
+      }
+
+    }
+
+    .header-login{
+      text-align: right;
+    }
+
+    .header-login ul{
+      margin-top: 2%;
+    }
+
+
+
+  @include breakpoint(sm) {
+    .news-line, .login-lable, .login-wrapper, ul{
+        display: table-cell!important;
+        vertical-align: middle!important;
+      }
+
+      .login-lable{
+        padding-right: 10px!important;
+      }
+
+      .login-wrapper{
+        width: 270px!important;
+      }
+    }
+
+  @include breakpoint(md) {
+    .header-login div{
+      display: block;
+    }
+
+    ul.login {
+      width: auto;
+    }
+  }
+}
+
+
+
+
+

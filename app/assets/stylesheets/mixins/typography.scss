@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@mixin dotted_links {
+  border-bottom: 1px dashed rgb(173, 173, 173);
+  font-family: 'Roboto Condensed', sans-serif;
+  cursor: pointer;
+  color: $color-grey-super-strong;
+}
+
+@mixin hover_element{
+  background-color: $color-orange-light;
+  cursor: pointer;
+  border-color: transparent;
+}
+
+@mixin hover_link{
+  color: $color-blue;
+  // border-color: $color-orange-strong;
+  cursor: pointer;
+}
+
+@mixin link_blue{
+  color: $color-blue;
+  cursor: pointer;
+}
+
+@mixin form_elements{
+  font-family: 'Roboto Condensed', sans-serif;
+  border-radius: 3px;
+  border: 1px solid $color-grey;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+@mixin selector-aligne{
+  height: 38px;
+  line-height: 38px;
+}

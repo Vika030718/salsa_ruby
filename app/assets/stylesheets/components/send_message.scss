@@ -1,0 +1,21 @@
+.form-header{
+  overflow: hidden;
+
+p{font-size: 0.8em;}
+
+  div:nth-child(1)>div{
+    margin-bottom: 15px;
+    overflow: hidden;
+  }
+
+  input{width: 93%;}
+  textarea{width: 99%;}
+
+  button{
+    width: 25%;
+    height: 30px;
+    float: right;
+    @include form_elements;
+  }
+}
+

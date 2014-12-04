@@ -1,0 +1,19 @@
+.left-column-i.banner{
+  padding: 0;
+}
+
+.left-column .banner figure{
+  background-image: image-url('pages/home/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  padding-top: 16.66%;
+}
+
+.right-column .banner figure{
+  background-image: image-url('pages/school/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  padding-top: 140%;
+}

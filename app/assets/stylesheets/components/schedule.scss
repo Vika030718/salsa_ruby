@@ -1,0 +1,9 @@
+.schedule{
+	.table-wrapper {
+	  background: $color-grey-super-light;
+
+	  div{vertical-align: middle;}
+
+	  div.table-row:nth-child(1){background: $color-blue-light}
+	}
+}

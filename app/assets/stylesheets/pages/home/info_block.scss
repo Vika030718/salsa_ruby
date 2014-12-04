@@ -1,0 +1,97 @@
+.salsa-info{
+  padding: 3.45%;/* 30px: 30/870*100%=3.45%*/
+
+  h2{
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-bottom: .7em;
+    text-shadow: 0 1px 1px $color-white;
+    vertical-align: baseline;
+    color: $color-orange-strong;
+    &:hover{
+      cursor: pointer;
+      // color: $color-orange-strong;
+    }
+  }
+
+  .salsa-info-ul{
+    position: relative;
+    width: 100%;
+
+    li{
+      position: relative;
+      letter-spacing: -0.4px;
+      margin-right: 3.7%; /* 30px: 30/810*100%=3.7% */
+      margin-bottom: 3.7%;
+      text-align: justify;
+      padding-left: 0;
+
+      &:nth-last-child(1){margin-bottom: 0;}
+
+      &:before{
+        display: none;
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top:  0;
+        left: 0;
+        background-image: image-url('components/info_block/sprite.png');
+        background-repeat: no-repeat;
+      }
+
+      div{
+        letter-spacing: -0.4px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.salsa-info-ul li.hst:before{
+  background-position: 0 0;
+}
+.salsa-info-ul li.mw:before{
+  background-position: -60px 0;
+}
+.salsa-info-ul li.vcblr:before{
+  background-position: -120px 0;
+}
+.salsa-info-ul li.stl:before{
+  background-position: -180px 0;
+}
+.salsa-info-ul li.vd:before{
+  background-position: -240px 0;
+}
+.salsa-info-ul li.mstrs:before{
+  background-position: -300px 0;
+}
+
+@include breakpoint(xxs) {
+  .salsa-info-ul li{
+    padding-left: 16.01%!important;
+
+    &:before{display: block!important;}
+  }
+}
+
+@include breakpoint(lg) {
+  .salsa-info-ul li{
+    float: left;
+    width: 39.13%; /* 317px: 317/810*100%=39.13% вообще li = 390px, но из них 73 - это левый паддинг, поэтому берём 317px */
+    padding-left: 9.01%!important;/* 73px: 73/810*100%=11% */
+
+    &:before{
+      width: 13%;
+      height: 50%;
+    }
+
+    &:nth-child(2n){margin-right: 0;/*30/870*100%=3.45%*/}
+
+    &:nth-last-child(-n+2){margin-bottom: 0;}
+  }
+}
+
+
+
+

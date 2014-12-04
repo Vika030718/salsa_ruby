@@ -1,0 +1,146 @@
+.events-header{
+	display: table;
+	position: relative;
+	width: 100%;
+
+	h1{
+		float: left;
+		margin-right: 3%;
+		@include selector-aligne;
+	}
+
+	.events-header-place{
+		display: flex;
+		justify-content: space-between;
+		clear: both;
+	}
+
+	.calendar{
+		text-align: center;
+		display: block;
+		clear: both;
+
+		&:hover{cursor: pointer;}
+
+		img{
+			width: 35px;
+			height: 35px;
+			vertical-align: middle;
+
+			&:hover{transform:scale(1.2)}
+		}
+
+		span{
+			@include dotted_links;
+
+			&:hover{@include hover_link;}
+		}
+	}
+}
+
+.events-type{
+	display: inline-block;
+	margin-top: 10%;
+	margin-bottom: 10%;
+
+	.active{
+		@include hover_element;
+		span{
+			border: none!important;
+		}
+	}
+
+	li{
+		width: 50%;
+		display: block;
+		background-color: $color-orange-super-light;
+		float: left;
+		font-family: 'Roboto Condensed', sans-serif;
+		list-style-type: none;
+		text-align: center;
+		@include selector-aligne;
+
+		&:hover{
+			@include hover_element;
+			span{border-bottom: none;}
+		}
+
+		span{
+			@include dotted_links;
+			&:hover{border-bottom: none;}
+		}
+	}
+
+	@include breakpoint (md) {
+	 	li{
+			width: auto;
+			display: inline-block;
+			padding: 0 10px;
+			margin-right: 2px;
+		}
+	}
+}
+
+.events-wrapper{
+	padding: 20px 0 0 0px;
+	text-align: justify;
+
+	.events-i, .dummy{
+		width: 130px;
+		display: inline-block;
+	}
+
+	.events-i{
+		height: auto;
+		vertical-align: top;
+		padding-bottom: 15px;
+
+		.events-i-date, .events-i-time{font-size: 0.8em;}
+
+		.events-i-photo{
+			height: 183px;
+			overflow: hidden;
+
+			&:hover{cursor: pointer;}
+
+			img{width: 94%;}
+		}
+
+		.events-i-name{
+			font-size: 1em;
+			font-weight: 700;
+			margin-top: 8px;
+			margin-bottom: 2px;
+
+			&:hover{
+				color: $color-orange-strong;
+				cursor: pointer;
+			}
+		}
+
+		.events-i-date, .events-i-time {color: $color-grey-light;}
+	}
+}
+
+@include breakpoint (xxs) {
+	.events-header select{
+		padding: 2%;
+		margin-right: 2%;
+	}
+
+	.events-type{
+		margin-right: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		background-color: $color-white;
+
+		li{background-color: $color-white;}
+	}
+
+	.events-header-place,
+	.events-type,
+	.calendar{
+		display: table-cell!important;
+		vertical-align: middle;
+	}
+}

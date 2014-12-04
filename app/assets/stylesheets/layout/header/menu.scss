@@ -1,0 +1,133 @@
+header {
+  nav{
+    ul{display: none;}
+
+    .nav-icon{
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    }
+  }
+
+  .header-wrapper {
+    li.active-menu-li{
+       .arrow-up{display: block;}
+    }
+
+    li{
+      position: relative;
+      padding: 0 1%;
+      text-decoration: none;
+      text-align: left;
+      padding: 2% 0;
+      border-bottom: 1px solid $color-grey-light;
+
+      &:hover{
+        cursor: pointer;
+
+        .arrow-up{display: block;}
+      }
+
+      &:before {
+        content: '';
+        display: none;
+        width: 30px;
+        height: 30px;
+        background: image-url('components/menu/menu_sprite_2.png');
+        margin: auto;
+        margin-bottom: 10px;
+      }
+
+      &:hover:before {transform: scale(1.2);}
+
+      &:nth-child(1){
+        margin-top: 4%;
+        border-top: 1px solid $color-grey-light;
+      }
+
+      &:nth-last-child(1) {
+        padding-right: 0;
+        margin-bottom: 4%;
+      }
+
+      a {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 1em;
+        color: #FFFEDE;
+      }
+    }
+  }
+}
+
+
+header .header-wrapper li.schl:before {
+  background-position: -30px 0px;
+}
+
+header .header-wrapper li.vnts:before {
+  background-position: -60px 0px;
+}
+
+header .header-wrapper li.nws:before {
+  background-position: -90px 0px;
+}
+
+header .header-wrapper li.ll:before {
+  background-position: -120px 0px;
+}
+
+header .header-wrapper li.cntcts:before {
+background-position: -150px 0px;
+}
+
+.arrow-up{
+  position: absolute;
+  display: none;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid $color-grey;
+  top: 75px;
+  right: 50%;
+  margin-right: -10px;
+  z-index: 1000;
+}
+
+@include breakpoint (sm) {
+
+  header {
+    nav{
+    float: right;
+    text-align: right;
+
+    .nav-icon{display: none!important;}
+
+    ul{
+      display: block!important;
+      float: right!important;
+      width: 511px;
+    }
+
+    }
+
+    .header-wrapper  {
+      li{
+        float: left;
+        border: none;
+        padding: 0 2%;
+
+        &:before{display: block;}
+
+        &:nth-child(1){
+          margin-top: 0;
+          border-top: none;
+        }
+
+        &:nth-last-child(1) {margin-bottom: 0;}
+      }
+    }
+  }
+
+
+}

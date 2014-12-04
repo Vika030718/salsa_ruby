@@ -1,0 +1,34 @@
+.show-more{
+	font-size: 16px;
+	text-align: center;
+	float: right;
+	position: relative;
+	padding-right: 15px;
+}
+
+.show-more:hover{
+	color: $color-orange-strong;
+	cursor: pointer;
+}
+
+.show-more:after{
+	content: '';
+	width: 10px;
+	height: 17px;
+	position: absolute;
+	background-image: image-url('components/show_more/arrow.png');
+	top: 4px;
+	right: 0px;
+}
+.show-more:hover:after{
+	background-image: image-url('components/show_more/arrow-orange.png');
+}
+
+.show-more span{
+	@include dotted_links;
+
+	&:hover{@include hover_link;}
+}
+
+
+

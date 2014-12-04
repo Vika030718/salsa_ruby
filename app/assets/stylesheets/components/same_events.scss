@@ -1,0 +1,86 @@
+.top-schools{
+  text-align: center;
+  margin-top: 0;
+}
+
+.same-events-i{
+  margin-bottom: 20px;
+  margin-right: 5%;
+  display: inline-block;
+  text-align: center;
+
+  .top-school-rate{margin-bottom: 10px;}
+
+  .same-events-photo{
+    float: none;
+    position: relative;
+    width: 120px;
+    margin: auto;
+  }
+
+  .top-school-name{
+    font-weight: bold;
+    color: $color-black-light;
+    margin-bottom: 10px;
+
+    &:hover{
+    cursor: pointer;
+    }
+  }
+
+  .show-more{
+    text-align: center;
+    position: relative;
+    padding-right: 14px;
+  }
+
+  .top-school-address{
+    font-size: 0.8em;
+    color: $color-grey-light;
+  }
+
+  &:nth-last-child(2){margin-right: 0;}
+
+  .top-school-link-more{
+      width: 100px;
+      height: 30px;
+      line-height: 30px;
+      display: inline-block;
+      margin-bottom: 10px;
+
+      span{
+        @include dotted_links;
+        &:hover{@include hover_link;}
+      }
+
+
+  }
+}
+
+@include breakpoint(lg) {
+  .same-events-i{
+    text-align: left;
+
+    .same-events-photo{
+      margin-right: 20px;
+      float: left;
+    }
+  }
+}
+
+@include breakpoint (xs) {
+  .same-events-i{
+    display: block;
+    margin-right: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+

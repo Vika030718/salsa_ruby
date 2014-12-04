@@ -1,0 +1,31 @@
+
+.rating-stars{
+	display: inline-block;
+  position: relative;
+  text-align: left;
+
+  li{
+    width: 20px;
+    height: 18px;
+    float: left;
+    margin-right: 1px;
+    list-style-type: none;
+
+    &:before{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 18px;
+      background-image: image-url('components/rating/star_on.png');
+    }
+
+    &:hover:before{
+       background-image: image-url('components/rating/star_off.png');
+       cursor: pointer;
+    }
+  }
+}
+
+
+
+

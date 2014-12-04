@@ -1,0 +1,35 @@
+.table{
+  width: 100%;
+  display: none;
+}
+
+.table-wrapper {
+  display: table;
+  width: 100%;
+  border-collapse: collapse ;
+
+  div{vertical-align: middle;}
+
+  div.table-row:nth-child(1){font-weight: bold;}
+}
+
+.table-row{
+  display: table-row;
+
+}
+
+.table-cell{
+  font-size: 0.8em;
+  display: table-cell;
+  padding: 1%;
+  border:2px solid $color-white;
+  width: 11.5%;
+
+  &:nth-child(n+1){text-align: center;}
+}
+
+.table-wrapper div.table-row div:nth-child(1){
+  width: 16.5%;
+  font-size: 1em;
+  text-align: left;
+}
