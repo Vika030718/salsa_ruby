@@ -4,34 +4,25 @@
       %h1 Рейтинг школ Днепропетровска
       .line
       .top-schools-i
+        .top-school-name Cubana Dance
+        = render 'components/rating'
         .top-school-photo
-          -# =image_tag("components/top_school/medal1.png", class: 'school-medal')
           =image_tag("stubs/top_school/news1.jpg")
-        .top-school-name Cubana Dance
-        = render 'components/rating'
-        .top-school-address ул. Баррикадная, 2
-        .top-school-link-more
-          %span Подробнее
+          .overlay
         .clear
       .top-schools-i
+        .top-school-name Cubana Dance
+        = render 'components/rating'
         .top-school-photo
-          -# =image_tag("components/top_school/medal2.png", class: 'school-medal')
           =image_tag("stubs/top_school/news10.jpg")
-        .top-school-name Cubana Dance
-        = render 'components/rating'
-        .top-school-address ул. Баррикадная, 2
-        .top-school-link-more
-          %span Подробнее
+          .overlay
         .clear
-      .top-schools-i
-        .top-school-photo
-          -# =image_tag("components/top_school/medal3.png", class: 'school-medal')
-          =image_tag("stubs/top_school/news11.jpg")
+        .top-schools-i
         .top-school-name Cubana Dance
         = render 'components/rating'
-        .top-school-address ул. Баррикадная, 2
-        .top-school-link-more
-          %span Подробнее
+        .top-school-photo
+          =image_tag("stubs/top_school/news11.jpg")
+          .overlay
         .clear
     .show-more
       %span Все школы
