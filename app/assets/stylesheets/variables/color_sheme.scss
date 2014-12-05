@@ -1,12 +1,12 @@
 //Marina
-$color-main: #FFFEDE;
-$color-stripes: #E77718;
-$color-blocks-layout: #fff;
+// $color-main: #FFFEDE;
+// $color-stripes: #E77718;
+// $color-blocks-layout: #fff;
 
 // Color_sheme №1: Peach - Vinous - White
-// $color-main: #E7D9B7;
-// $color-stripes: #A83F3F;
-// $color-blocks-layout: #fff;
+$color-main: linear-gradient(to bottom, #E7D9B7 0%, #E7D9B7 100%);
+$color-stripes: linear-gradient(to bottom, #A83F3F 0%, #A83F3F 100%);
+$color-blocks-layout: #fff;
 
 //Color_sheme №2: Red - Orange -White
 // $color-main: #8F0100;
@@ -14,13 +14,11 @@ $color-blocks-layout: #fff;
 // $color-blocks-layout: #fff;
 
 // Color_sheme №3: Peach - Orange - White
-$color-main: #F7E2C0;
-$color-stripes: #FAC716;
-$color-blocks-layout: #fff;
-
+// $color-main: #F7E2C0;
+// $color-stripes: #FAC716;
+// $color-blocks-layout: #fff;
 
 // Color_sheme №4: brown
-
 // $color-main: linear-gradient(to bottom, #E5BA84 0%, #E5BA84 100%);
 // $color-stripes: linear-gradient(to bottom, #C27937 0%, #733803 100%);
 // // $color-main: #E5BA84;
