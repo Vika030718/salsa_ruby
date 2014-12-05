@@ -40,3 +40,9 @@
   height: 38px;
   line-height: 38px;
 }
+
+@mixin flex_centering{
+display: flex;
+align-items: center;
+justify-content: center;
+}

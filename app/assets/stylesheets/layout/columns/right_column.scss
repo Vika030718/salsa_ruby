@@ -1,6 +1,6 @@
 .right-column-i{
   margin-bottom: 7.5%;
-  background-color: rgb(255, 255, 255);
+  background-color: $color-blocks-layout;
   padding: 7.35% 8.82%;
   position: relative!important;
 
@@ -8,7 +8,7 @@
    content: '';
    height: 5px;
    width: 100%;
-   background: $color-blue;
+   background: $color-stripes;
    position: absolute;
    top: 0px;
    left: 0;

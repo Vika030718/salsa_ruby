@@ -3,6 +3,7 @@
 body{
 	font-size: 0.9em;
 	color: $color-grey-super-strong;
+	background: $color-main;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,9 +22,7 @@ p{text-align: justify;}
 
 .main {
 	// background-image: image-url('background.jpg');
-	padding: 2.4%; /* 30px */background: rgba(203,96,179,1);
-	background: $color-main;
-
+	padding: 2.4%; /* 30px */
 }
 
 .page-wrapper{

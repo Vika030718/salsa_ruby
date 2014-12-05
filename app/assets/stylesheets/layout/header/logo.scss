@@ -1,6 +1,7 @@
 .logo{
   text-align: center;
   padding: 4% 0;
+  @include flex_centering;
 
   img{
     height: auto;

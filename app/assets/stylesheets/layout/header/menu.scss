@@ -1,5 +1,6 @@
 header {
   nav{
+
     ul{display: none;}
 
     .nav-icon{
@@ -33,7 +34,7 @@ header {
         display: none;
         width: 30px;
         height: 30px;
-        background: image-url('components/menu/menu_sprite_2.png');
+        background: image-url('components/menu/menu_sprite_1.png');
         margin: auto;
         margin-bottom: 10px;
       }
@@ -87,7 +88,7 @@ background-position: -150px 0px;
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid $color-grey;
+  border-bottom: 10px solid $color-blocks-layout;
   top: 75px;
   right: 50%;
   margin-right: -10px;
@@ -98,15 +99,13 @@ background-position: -150px 0px;
 
   header {
     nav{
-    float: right;
-    text-align: right;
 
     .nav-icon{display: none!important;}
 
     ul{
       display: block!important;
-      float: right!important;
       width: 511px;
+      margin: auto;
     }
 
     }
