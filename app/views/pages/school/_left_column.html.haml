@@ -1,77 +1,25 @@
-.left-column.col-7.col-sm-5
-  .left-column-i
-    .school-header.col-7
-      %h1.col-6 Cubana Dance
-      %button.add-to-favorit.col-1
-        %span В&nbsp;избранное
-    .school-header.col-7
-      .col-7
-        = render 'components/rating'
-    .line
-    .contacts-wrapper.col-7
-      .telephone
-        %h3 Телефон:
-        %span 066 792 19 25 - Виталий
-      .site
-        %h3 Сайт:
-        %a www.cubanadance.com
-      .email
-        %h3 Email:
-        %a cubanadance@gmail.com
-    .line
-    .school-description-wrapper.row
-      .picture-block-wrapper.col-7.col-xs-3
-        =image_tag("stubs/school/news-1.jpg", class: 'school-img')
-        .photo-gallery.owl-carousel
-          %div
-            = image_tag('stubs/carousel/carousel1.jpg')
-          %div
-            = image_tag('stubs/carousel/carousel3.jpg')
-          %div
-            = image_tag('stubs/carousel/carousel4.jpg')
-          %div
-            = image_tag('stubs/carousel/carousel1.jpg')
-          %div
-            = image_tag('stubs/carousel/carousel3.jpg')
-      .description-wrapper.col-7.col-xs-4
-        .tag-wrapper.col-7
-          %ul
-            %li Сальса
-            %li Бачата
-            %li Тимба
-            %li Румба
-            %li Сон
-        .description-text
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita non suscipit atque nostrum odio tempore totam odit mollitia earum inventore voluptatum dolorum, accusamus error necessitatibus saepe exercitationem explicabo amet. Placeat.
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita non suscipit atque nostrum odio tempore totam odit mollitia earum inventore voluptatum dolorum, accusamus error necessitatibus saepe exercitationem explicabo amet.
-          %p Placeat.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        = render 'components/social'
-    .additional-information-wrapper.col-7
-      %div
-        %h2 Набор в группы
-        .line
-        = render 'components/sets'
-      = render 'components/schedule'
-      %div
-        %h2 Цены
-        .line
-        = render 'components/price'
-      .video
-        %h2 Наше Видео
-        .line
-        .owl-carousel
-          %div.video-i
-            %iframe{src: "//www.youtube.com/embed/lfHOOr9eATs",frameborder: 0, allowfullscreen: true}
-          %div.video-i
-            %iframe{src: "//www.youtube.com/embed/nGX2Sv8WpnU",frameborder: 0, allowfullscreen: true}
-          %div.video-i
-            %iframe{src: "//www.youtube.com/embed/cEOzlB1sWtw?list=FL9XvNhKYvd16Nj3sH_LKI5A",frameborder: 0, allowfullscreen: true}
-      %div
-        %h2 Наши преподаватели
-        .line
-        = render 'components/coach'
-
-  .left-column-i.comments
-    = render 'components/comments'
-  .left-column-i.comments
-    = render 'components/send_message'
+.left-column-i.wrapped
+  = render 'pages/school/school_header'
+  = render 'components/school_contacts'
+  .line
+  .school-description-wrapper.row
+    = render 'components/school_photo_block'
+    .description-wrapper.col-7.col-xs-4
+      = render 'components/tags'
+      .description-text
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita non suscipit atque nostrum odio tempore totam odit mollitia earum inventore voluptatum dolorum, accusamus error necessitatibus saepe exercitationem explicabo amet. Placeat.
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita non suscipit atque nostrum odio tempore totam odit mollitia earum inventore voluptatum dolorum, accusamus error necessitatibus saepe exercitationem explicabo amet.
+        %p Placeat.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      = render 'components/social'
+  .additional-information-wrapper.col-7
+    = render 'components/sets'
+    = render 'components/schedule'
+    = render 'components/coach'
+    = render 'components/price'
+    = render 'components/video'
+.left-column-i.col-7.wrapped
+  = render 'components/school_news'
+.left-column-i.comments.wrapped
+  = render 'components/comments'
+.left-column-i.comments.wrapped
+  = render 'components/send_message'

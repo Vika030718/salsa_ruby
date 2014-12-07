@@ -5,7 +5,7 @@
     = render 'layouts/header'
     .page-wrapper
       .main
-        .wrapper.row{class: yield(:main_wrapper_class)}
+        .wrapper{class: yield(:main_wrapper_class)}
           = yield
         .clear
       .page-buffer

@@ -1,0 +1,15 @@
+.menu-copy{
+  padding: 0;
+  display: flex;
+  line-height: 0;
+
+  .first_column {width: 33.125%;}
+  .second_column {width: 36.25%;}
+  .third_column {width: 30.625%;}
+
+  img{
+    width: 100% !important;
+    height: auto !important;
+  }
+
+}

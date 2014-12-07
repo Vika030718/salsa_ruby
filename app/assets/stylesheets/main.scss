@@ -4,8 +4,7 @@ body{
 	font-size: 0.9em;
 
 	color: $color-grey-super-strong;
-	background: $color-main;
-	background: url('stubs/bg.jpg');
+	background: $color-blocks-layout;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,7 +23,7 @@ p{text-align: justify;}
 
 .main {
 	// background-image: image-url('background.jpg');
-	padding: 2.4%; /* 30px */
+	// padding: 2.4%;
 }
 
 .page-wrapper{
@@ -33,7 +32,7 @@ p{text-align: justify;}
 }
 
 .wrapper{
-	max-width: 1200px;
+	// max-width: 1200px;
 	margin: auto;
 }
 
@@ -53,4 +52,10 @@ body > .line{
 
 .clear{
 	clear: both;
+}
+
+.wrapped{
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 25px;
 }

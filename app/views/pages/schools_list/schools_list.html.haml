@@ -1,4 +1,6 @@
 - content_for(:main_wrapper_class, 'schools-list')
 
-= render 'pages/schools_list/left_column'
-= render 'pages/schools_list/right_column'
+.row
+  = render 'pages/schools_list/search_menu'
+  = render 'pages/schools_list/list'
+  = render 'pages/schools_list/map'

@@ -1,24 +1,26 @@
-.left-column-i:nth-child(1){margin-top: 0;}
-
 .left-column-i{
   background-color: $color-blocks-layout;
-  margin: 3.44% 0; /* 30px: 30/870*100%=3.44% */
-  padding: 2.87% 3.44%; /* 25px: 25/870*100%=2.87% 30px: 30/870*100%=3.44% */
   position: relative!important;
 
-  &:before{
-   content: '';
-   height: 5px;
-   width: 100%;
-   background: $color-stripes;
-   position: absolute;
-   top: 0px;
-   left: 0;
-  }
+  // &:before{
+  //  content: '';
+  //  height: 5px;
+  //  width: 100%;
+  //  background: $color-stripes;
+  //  position: absolute;
+  //  top: 0px;
+  //  left: 0;
+  // }
 }
 
 .left-column h1{
-  // font-size: 1.37em; /* 22px */
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
+.school-map{
+  img{width: 100%;}
+}
+
+.events-map{
+  img{width: 100%;}
+}
