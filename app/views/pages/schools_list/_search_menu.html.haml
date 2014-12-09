@@ -1,3 +1,30 @@
-.search-menu.col-1
-  .left-column-i
+.search-menu.col-2
+  .search-menu-wrapper
+    = render 'components/city_select';
+    %div
+      %h2 Поиск по стилям
+      %ul
+        %li Сальса
+        %li Бачата
+        %li Реггетон
+        %li Зук
+        %li Ча-ча
+        %li Меренге
+    %div
+      %h2 Только с открытым набором
+      %ul
+        %li Да
+        %li Нет
+    %div
+      %h2 Сортировать по
+      %ul
+        %li Рейтенгу
+        %li Количеству просмотров
+        %li Количеству комментариев
+        %li По цене
+        %li По расстоянию от моего дома
+    %div.name-search
+      %h2 Поиск по названию
+      %input
+      =image_tag('icons/search-icon.png');
 

@@ -1,0 +1,30 @@
+ .search-menu{background: $color-grey-super-light;}
+
+  .search-menu-wrapper{
+    border-right: 1px solid $color-grey-strong;
+    div {
+        border-bottom: 1px solid $color-grey-strong;
+        box-shadow: inset 0 1px 0 #fff;
+        padding: 15px; 
+      }
+
+    h2{padding: 10px 0;}
+
+    .name-search{
+      input{
+        border: none;
+        box-shadow: none;
+        border-bottom: 1px solid $color-grey-strong;
+        width: 80%;
+        position: relative;
+      }
+      img{width: 35px;}
+    }
+  }
+
+  
+
+
+
+
+

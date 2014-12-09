@@ -7,6 +7,23 @@
   .second_column {width: 36.25%;}
   .third_column {width: 30.625%;}
 
+  .menu-image-i{
+    position: relative;
+    div{
+      position: absolute;
+      color: $color-white;
+      top: 0px;
+      //left: 15px;
+      font-weight: bold;
+      font-size: 2em;
+      height: 30px;
+      width: 100%;
+      line-height: 1em;
+      background-color: rgba(39, 39, 39, 0.71);
+    }
+  }
+  
+
   img{
     width: 100% !important;
     height: auto !important;

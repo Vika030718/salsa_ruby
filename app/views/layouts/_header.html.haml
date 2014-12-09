@@ -1,5 +1,5 @@
 %header
-  .header-black.col-7
+  .header-black.col-10
     .news-line Зажигательная вечеринка на набережной! Спешите посетить!
     .login-wrapper
       .login-lable Логин с помощью
@@ -9,30 +9,30 @@
         %li.tw
         %li.gl
   .header-wrapper.row
-    .logo.col-7
+    .logo.col-10
       = image_tag('logo2.png')
-    #main-menu.col-7
+    #main-menu.col-10
       %nav
-        .nav-icon.col-7
+        .nav-icon.col-10
           &#9776;
         %ul
           %li.hm.active-menu-li
-            %a
+            %a{href: 'http://192.168.1.105:3000'}
               Главная
               %div
                 %span.arrow-up
           %li.schl
-            %a
+            %a{href: 'http://192.168.1.105:3000/schools_list'}
               Школы сальсы
               %div
                 %span.arrow-up
           %li.vnts
-            %a
+            %a{href: 'http://192.168.1.105:3000/events_list'}
               Мероприятия
               %div
                 %span.arrow-up
           %li.nws
-            %a
+            %a{href: 'http://192.168.1.105:3000/photoreports_list'}
               Новости
               %div
                 %span.arrow-up

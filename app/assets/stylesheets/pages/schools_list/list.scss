@@ -1,0 +1,55 @@
+ .school-list{
+
+
+
+  
+  & > h2{padding: 30px 10px;}
+  .list-i{
+
+    span:nth-of-type(1){
+      font-weight: bold;
+      color: $color-black-light;
+    }
+    span:nth-of-type(2){color:$color-grey;}
+
+    &:hover{
+      background:$color-grey-super-light;
+      cursor:pointer;
+    }
+
+    div:nth-child(2){padding: 0 15px;}
+
+    height: 190px;
+    overflow: hidden;
+    padding: 15px;
+    display: flex;
+    background: $color-list-i;
+    border-top: 1px solid $color-grey-strong;
+    box-shadow: inset 0 1px 0 #fff;
+
+    div:nth-child(1){
+      display: flex;
+      align-items: center;
+    }
+
+    div:nth-child(2)>div{
+      margin-bottom: 10px;
+    }
+
+    img{
+      width: 100%;
+      max-width: 180px;
+      min-width: 120px;
+      float: left;
+    }
+
+    .rating{display: inline-block;}
+  }
+ }
+
+
+
+
+
+
+
