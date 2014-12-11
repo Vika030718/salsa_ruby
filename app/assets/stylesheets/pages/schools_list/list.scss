@@ -1,16 +1,76 @@
+.school-list-wrapper{
+  float: right;
+  .pagination{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+    li{
+      display: inline-block;
+      background-color: $color-white;
+      margin-right: 10px;
+      text-align: center;
+      height: 40px;
+      line-height: 40px;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 15px;
+
+      &:nth-last-child(1){margin-right: 0;}
+
+      &:hover{
+        background-color:$color-grey-light;
+        cursor: pointer;
+        color: $color-white;
+      }
+    }
+    .li.active{
+      background-color: $color-grey-light;
+      color: $color-white;
+    }
+  }
+}
+
+.school-list-wrapper-border{
+  border: 1px solid $color-grey-strong;
+  border-top: 0;
+  // box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3), -24px -14px 30px -24px rgba(116, 116, 116, 0.78), 23px -14px 22px -23px rgba(0, 0, 0, 0.8), 0 0px 0px rgba(0, 0, 0, 0) inset;
+}
+
+  .school-list-header{
+    max-width: 960px; /* 1200px(wrapper width) - 240px(search-menu width)*/
+    top: 110px;
+    z-index: $z-index-menu;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom, #fff 0%, #FFFFFF 100%);
+    padding: 20px 0;
+
+    li{
+      float: left;
+      width: 50%;
+      text-align: center;
+      padding: 10px 0;
+      cursor: pointer;
+      background: $color-grey-super-light;
+      color: $color-grey-super-strong;
+      }
+
+    li.active{
+      background: $color-stripes;
+      color: $color-white;
+      cursor: default;
+    }
+
+    h3{padding-left: 20px;}
+  }
+
  .school-list{
-
-
-
-  
-  & > h2{padding: 30px 10px;}
   .list-i{
 
-    span:nth-of-type(1){
+    .review{
       font-weight: bold;
       color: $color-black-light;
     }
-    span:nth-of-type(2){color:$color-grey;}
 
     &:hover{
       background:$color-grey-super-light;
@@ -27,9 +87,10 @@
     border-top: 1px solid $color-grey-strong;
     box-shadow: inset 0 1px 0 #fff;
 
-    div:nth-child(1){
+    &>div:nth-child(1){
       display: flex;
       align-items: center;
+      justify-content: center;
     }
 
     div:nth-child(2)>div{

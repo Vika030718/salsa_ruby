@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'pages#home'
+  get ':page_name' => 'pages#search_page', constraints: {page_name: '(schools_list|events_list|search)'}
   get ':page_name' => 'pages#page'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

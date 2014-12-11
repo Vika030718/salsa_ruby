@@ -1,0 +1,42 @@
+.events-type{
+  display: inline-block;
+  margin-top: 20%;
+  margin-bottom: 20%;
+
+  .active{
+    @include hover_element;
+    a{
+      border: none!important;
+    }
+  }
+
+  li{
+    width: 50%;
+    display: block;
+    background-color: $color-orange-super-light;
+    float: left;
+    font-family: 'Roboto Condensed', sans-serif;
+    list-style-type: none;
+    text-align: center;
+    @include selector-aligne;
+
+    &:hover{
+      @include hover_element;
+      a{border-bottom: none;}
+    }
+
+    a{
+      @include dotted_links;
+      &:hover{border-bottom: none;}
+    }
+  }
+
+  @include breakpoint (md) {
+    li{
+      width: auto;
+      display: inline-block;
+      padding: 0 10px;
+      margin-right: 2px;
+    }
+  }
+}

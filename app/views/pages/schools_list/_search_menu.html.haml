@@ -2,29 +2,56 @@
   .search-menu-wrapper
     = render 'components/city_select';
     %div
-      %h2 Поиск по стилям
+      %h3 Поиск по стилям
       %ul
-        %li Сальса
-        %li Бачата
-        %li Реггетон
-        %li Зук
-        %li Ча-ча
-        %li Меренге
+        %li
+          %label
+            %input{type: 'checkbox'}
+              Сальса
+        %li
+          %label
+            %input{type: 'checkbox'} Бачата
+        %li
+          %label
+            %input{type: 'checkbox'} Реггетон
+        %li
+          %label
+            %input{type: 'checkbox'} Зук
+        %li
+          %label
+            %input{type: 'checkbox'} Ча-ча
+        %li
+          %label
+            %input{type: 'checkbox'} Меренге
     %div
-      %h2 Только с открытым набором
+      %h3 Только с открытым набором
       %ul
-        %li Да
-        %li Нет
+        %li
+          %label
+            %input{type: 'checkbox'} Да
+        %li
+          %label
+            %input{type: 'checkbox'} Нет
     %div
-      %h2 Сортировать по
+      %h3 Сортировать по
       %ul
-        %li Рейтенгу
-        %li Количеству просмотров
-        %li Количеству комментариев
-        %li По цене
-        %li По расстоянию от моего дома
+        %li
+          %label
+            %input{type: 'checkbox'} Рейтенгу
+        %li
+          %label
+            %input{type: 'checkbox'} Количеству просмотров
+        %li
+          %label
+            %input{type: 'checkbox'} Количеству комментариев
+        %li
+          %label
+            %input{type: 'checkbox'} По цене
+        %li
+          %label
+            %input{type: 'checkbox'} По расстоянию от моего дома
     %div.name-search
-      %h2 Поиск по названию
+      %h3 Поиск по названию
       %input
       =image_tag('icons/search-icon.png');
 

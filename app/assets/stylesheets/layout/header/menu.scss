@@ -12,7 +12,7 @@ header {
 
   .header-wrapper {
     li.active-menu-li{
-       .arrow-up{display: block;}
+       // .arrow-up{display: block;}
     }
 
     li{
@@ -26,7 +26,7 @@ header {
       &:hover{
         cursor: pointer;
 
-        .arrow-up{display: block;}
+        // .arrow-up{display: block;}
       }
 
       &:before {
@@ -81,19 +81,19 @@ header .header-wrapper li.cntcts:before {
 background-position: -150px 0px;
 }
 
-.arrow-up{
-  position: absolute;
-  display: none;
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid $color-blocks-layout;
-  top: 75px;
-  right: 50%;
-  margin-right: -10px;
-  z-index: 1000;
-}
+// .arrow-up{
+//   position: absolute;
+//   display: none;
+//   width: 0;
+//   height: 0;
+//   border-left: 10px solid transparent;
+//   border-right: 10px solid transparent;
+//   border-bottom: 10px solid $color-blocks-layout;
+//   top: 75px;
+//   right: 50%;
+//   margin-right: -10px;
+//   z-index: 1000;
+// }
 
 @include breakpoint (sm) {
 

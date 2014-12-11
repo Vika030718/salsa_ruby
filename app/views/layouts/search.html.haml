@@ -1,0 +1,13 @@
+!!! 5
+%html{lang: "ru"}
+  = render 'layouts/head'
+  %body
+    = render 'layouts/header'
+    .page-wrapper
+      .main
+        .wrapper{class: yield(:main_wrapper_class)}
+          = yield
+        .clear
+      .page-buffer
+    .line
+    //= render 'layouts/footer'

@@ -1,15 +1,33 @@
+-# .left-column.col-10
+  = render 'components/menu_copy'
+  .left-column-i.wrapped
+    .top-schools-wrapper.col-10
+      = render 'pages/home/school_top'
+  .col-10.school-map.no-wrapped
+    =image_tag("stubs/map/map_school.JPG")
+  .left-column-i.wrapped
+    .col-10.events
+      = render 'pages/home/events'
+  .col-10.events-map.no-wrapped
+    =image_tag("stubs/map/map_school.JPG")
+  .left-column-i.wrapped
+    .col-10.salsa-info
+      = render 'pages/home/info_block'
+
 .left-column.col-10
-  .left-column-i.no-wrapped
-    = render 'components/menu_copy'
-  .left-column-i.top-schools-wrapper.col-10.wrapped
-    = render 'pages/home/school_top'
-  .left-column-i.col-10.school-map.no-wrapped
-    =image_tag("stubs/map/map_school.JPG")
-  .left-column-i.col-10.events.wrapped
-    = render 'pages/home/events'
-  .left-column-i.col-10.events-map.no-wrapped
-    =image_tag("stubs/map/map_school.JPG")
-  .left-column-i.col-10.salsa-info.wrapped
-    = render 'pages/home/info_block'
-
-
+  .left-column-i.wrapped.banner
+    -# = render 'components/menu_copy'
+    = image_tag('main-banner.jpg')
+  -# .col-10.school-map.no-wrapped
+  -#   =image_tag("stubs/map/map_school.JPG")
+  -# .col-10.events-map.no-wrapped
+  -#   =image_tag("stubs/map/map_school.JPG")
+  .left-column-i.wrapped
+    .col-10.events
+      = render 'pages/home/events'
+    .top-schools-wrapper.col-10
+      = render 'pages/home/school_top'
+    .col-10.salsa-info
+      = render 'pages/home/info_block'
+    = render 'components/video'
+    = render 'components/school_news'

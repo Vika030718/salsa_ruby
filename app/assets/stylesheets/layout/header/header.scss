@@ -13,6 +13,7 @@ header{
 	#main-menu{
 		background: $color-stripes;
 		@include flex_centering;
+		z-index: $z-index-menu;
 	}
 
 	.header-wrapper{

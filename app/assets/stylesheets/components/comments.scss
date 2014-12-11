@@ -1,0 +1,49 @@
+.comments-block{overflow: hidden;}
+.comments-block-wrapper{
+  margin: auto;
+  max-width: 800px;
+}
+.comments-i{
+
+    &:nth-child(2){margin-top: 15px;}
+
+    padding-top: 20px;
+    overflow: hidden;
+    border-top: 1px solid $color-grey-strong;
+
+    img{
+      border-radius: 100px;
+      float: left;
+      margin-right: 3%;
+    }
+
+
+    .col-7{overflow: hidden;}
+
+    .name{
+      font-weight: bold;
+      margin-right: 2%;
+    }
+
+    .date{
+      color: $color-grey-light;
+      margin-right: 0;
+    }
+
+    .comment{
+      padding-top: 20px;
+      padding-bottom: 10px;
+
+      p{text-indent: 0;}
+      span{
+        font-weight: bold;
+        color: $color-blue;
+      }
+    }
+
+    .replay{
+      margin-bottom: 20px;
+      span{@include dotted_links;
+      }
+    }
+  }

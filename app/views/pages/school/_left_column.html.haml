@@ -4,12 +4,14 @@
   .line
   .school-description-wrapper.row
     = render 'components/school_photo_block'
-    .description-wrapper.col-10.col-xs-10
+    .description-wrapper.col-10.col-xs-6
       = render 'components/tags'
       .description-text
         %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita non suscipit atque nostrum odio tempore totam odit mollitia earum inventore voluptatum dolorum, accusamus error necessitatibus saepe exercitationem explicabo amet. Placeat.
         %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita non suscipit atque nostrum odio tempore totam odit mollitia earum inventore voluptatum dolorum, accusamus error necessitatibus saepe exercitationem explicabo amet.
         %p Placeat.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita non suscipit atque nostrum odio tempore totam odit mollitia earum inventore voluptatum dolorum, accusamus error necessitatibus saepe exercitationem explicabo amet.
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita non suscipit atque nostrum odio tempore totam odit mollitia earum inventore voluptatum dolorum, accusamus error necessitatibus saepe exercitationem explicabo amet.
       = render 'components/social'
   .additional-information-wrapper.col-10
     = render 'components/sets'
@@ -17,9 +19,5 @@
     = render 'components/coach'
     = render 'components/price'
     = render 'components/video'
-.left-column-i.col-10.wrapped
-  = render 'components/school_news'
-.left-column-i.comments.wrapped
-  = render 'components/comments'
-.left-column-i.comments.wrapped
-  = render 'components/send_message'
+    = render 'components/school_news'
+    = render 'components/comments'

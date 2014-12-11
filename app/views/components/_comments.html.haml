@@ -1,56 +1,72 @@
-%h2 Комментарии
-.line
-.comments-i.col-10.row
-  .col-2=image_tag("stubs/comments/1.jpg")
-  .col-8
-    .col-10
-      %span.name Алиса в стране чудес
-      %span.date 16 октября 2012 в 20:110
-    .comment.col-10
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita non suscipit atque nostrum odio tempore totam odit mollitia earum inventore voluptatum dolorum, accusamus error necessitatibus saepe exercitationem explicabo amet. Placeat.
-    .replay.col-10
-      %span Ответить
-.line
-.comments-i.col-10.row
-  .col-2=image_tag("stubs/comments/2.jpg")
-  .col-8
-    .col-10
-      %span.name Золушка
-      %span.date 16 октября 2012 в 20:110
-    .comment.col-10
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita non suscipit atque nostrum odio tempore totam odit mollitia earum inventore voluptatum dolorum, accusamus error necessitatibus saepe exercitationem explicabo amet. Placeat.
-    .replay.col-10
-      %span Ответить
-.line
-.comments-i.col-10.row
-  .col-2=image_tag("stubs/comments/3.jpg")
-  .col-8
-    .col-10
-      %span.name Пакахонтес
-      %span.date 16 октября 2012 в 20:110
-    .comment.col-10
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita non suscipit atque nostrum odio tempore totam odit mollitia earum inventore voluptatum dolorum, accusamus error necessitatibus saepe exercitationem explicabo amet. Placeat.
-    .replay.col-10
-      %span Ответить
-    .col-2=image_tag("stubs/comments/1.jpg")
-    .col-8
-      .col-10
-        %span.name Алиса в стране чудес
-        %span.date 16 октября 2012 в 20:110
-      .comment.col-10
-        %p
-          %span @Пакахонтес
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita non suscipit atque nostrum odio tempore totam odit mollitia earum inventore voluptatum dolorum, accusamus error necessitatibus saepe exercitationem explicabo amet. Placeat.
-      .replay.col-10
-        %span Ответить
-.line
-.comments-i.col-10.row
-  .col-2=image_tag("stubs/comments/3.jpg")
-  .col-8
-    .col-10
-      %span.name Пакахонтес
-      %span.date 16 октября 2012 в 20:110
-    .comment.col-10
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita non suscipit atque nostrum odio tempore totam odit mollitia earum inventore voluptatum dolorum, accusamus error necessitatibus saepe exercitationem explicabo amet. Placeat.
-    .replay.col-10
-      %span Ответить
+.comments-block.col-10
+  .comments-block-wrapper
+    %h2 Комментарии
+    .comments-i.col-10.row
+      .col-2=image_tag("stubs/comments/1.PNG")
+      .col-8
+        .col-10
+          %span.name Алиса в стране чудес
+          %span.date 16 октября 2012 в 20:110
+        .comment.col-10
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita non suscipit atque nostrum odio tempore totam odit mollitia earum inventore voluptatum dolorum, accusamus error necessitatibus saepe exercitationem explicabo amet. Placeat.
+        .replay.col-10
+          %span Ответить
+    .comments-i.col-10.row
+      .col-2=image_tag("stubs/comments/2.PNG")
+      .col-8
+        .col-10
+          %span.name Золушка
+          %span.date 16 октября 2012 в 20:110
+        .comment.col-10
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita non suscipit atque nostrum odio tempore totam odit mollitia earum inventore voluptatum dolorum, accusamus error necessitatibus saepe exercitationem explicabo amet. Placeat.
+        .replay.col-10
+          %span Ответить
+    .comments-i.col-10.row
+      .col-2=image_tag("stubs/comments/3.PNG")
+      .col-8
+        .col-10
+          %span.name Пакахонтес
+          %span.date 16 октября 2012 в 20:110
+        .comment.col-10
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita non suscipit atque nostrum odio tempore totam odit mollitia earum inventore voluptatum dolorum, accusamus error necessitatibus saepe exercitationem explicabo amet. Placeat.
+        .replay.col-10
+          %span Ответить
+        .col-2=image_tag("stubs/comments/1.PNG")
+        .col-8
+          .col-10
+            %span.name Алиса в стране чудес
+            %span.date 16 октября 2012 в 20:110
+          .comment.col-10
+            %p
+              %span @Пакахонтес
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita non suscipit atque nostrum odio tempore totam odit mollitia earum inventore voluptatum dolorum, accusamus error necessitatibus saepe exercitationem explicabo amet. Placeat.
+          .replay.col-10
+            %span Ответить
+    .comments-i.col-10.row
+      .col-2=image_tag("stubs/comments/3.PNG")
+      .col-8
+        .col-10
+          %span.name Пакахонтес
+          %span.date 16 октября 2012 в 20:110
+        .comment.col-10
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita non suscipit atque nostrum odio tempore totam odit mollitia earum inventore voluptatum dolorum, accusamus error necessitatibus saepe exercitationem explicabo amet. Placeat.
+        .replay.col-10
+          %span Ответить
+    %h2 Оставить комментарий
+    .line
+    %form
+      .form-header.col-10
+        .col-3
+          %div.col-10
+            %p Для того чтобы оставить комментарий, вам нужно быть зарегестрированным пользователем. Заполните пожалуйста необходимые для регистрации поля.
+          %div.col-10
+            %label.col-2 Ваше имя:
+            .col-5
+              %input{type: 'text'}
+          %div.col-10
+            %label.col-2 Ваш email:
+            .col-5
+              %input{type: 'text'}
+        .col-7
+          %textarea
+          %button Отправить

@@ -6,8 +6,21 @@
   }
 
   .left-column-i:nth-child(1){
-    margin-top: 5px;
+    margin-top: 0px;
     padding: 0;
+    max-width: 1250px;
+  }
+.banner{
+   max-width: 1250px;}
+
+   h2{font-size: 2em;}
+   h3{font-size: 1.5em;}
+
+.left-column-i{
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-top: none;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3), -24px -14px 30px -24px rgba(116, 116, 116, 0.78), 23px -14px 22px -23px rgba(0, 0, 0, 0.8), 0 0px 0px rgba(0, 0, 0, 0) inset;
   }
 }
 

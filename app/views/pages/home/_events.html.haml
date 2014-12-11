@@ -1,20 +1,20 @@
 .events-header.row
   .events-header-place.col-10.col-xxs-4.col-md-5
-    %h1 Мероприятия&nbsp;в
+    %h2 Мероприятия&nbsp;в
     %select{name: 'place'}
       %option Днепропетровске
       %option Украине
       %option Мире
-  %ul.events-type.col-10.col-xxs-4.col-md-5
+  %ul.events-type.col-10.col-xxs-4.col-md-4
     %li.active
-      %span Сальсатеки
+      %a Сальсатеки
     %li
-      %span Вечеринки
+      %a Вечеринки
     %li
-      %span Фестивали
+      %a Фестивали
     %li
-      %span Все
-  .calendar.col-10.col-xxs-2
+      %a Все
+  .calendar.col-10.col-xxs-2.col-md-1
     = image_tag('icons/calender-icon.png')
     %div
       %span Выбрать дату

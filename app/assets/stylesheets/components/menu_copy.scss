@@ -16,13 +16,16 @@
       //left: 15px;
       font-weight: bold;
       font-size: 2em;
-      height: 30px;
+      height: 60px;
       width: 100%;
       line-height: 1em;
       background-color: rgba(39, 39, 39, 0.71);
+      line-height: 60px;
+      padding-left: 20px;
+      &:hover{cursor: pointer;}
     }
   }
-  
+
 
   img{
     width: 100% !important;

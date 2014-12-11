@@ -6,17 +6,24 @@
   div{
     width: 33%;
     display: table;
-    text-align: center;
     div{
       width: 100%;
-      span{
-        margin-top: 10px;
-        @include dotted_links;
-        @include link_blue;
+      display: inline;
+      div{
+        display: block;
+        a{
+          margin-top: 10px;
+          @include dotted_links;
+          @include link_blue;
+        }
       }
     }
   }
 
-  img{border-radius: 50px;}
+  img{
+    border-radius: 50px;
+    float: left;
+    margin-right: 15px;
+  }
 
 }

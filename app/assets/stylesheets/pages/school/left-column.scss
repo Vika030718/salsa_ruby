@@ -9,10 +9,19 @@
 		.add-to-favorit{
 			display: flex;
 			justify-content: flex-end;
+			background: $color-grey-super-light;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100px;
+			height: 50px;
+			float: right;
+			color: $color-black-light;
 
-			span{
-				@include dotted_links;
-				&:hover{@include hover_link;}
+			&:hover{
+				background: $color-stripes;
+				color: $color-white;
+				cursor: pointer;
 			}
 		}
 
@@ -29,12 +38,14 @@
 			&:before{
 				content: '9.99';
 				font-weight: bold;
-				width: 38px;
+				width: 45px;
 				height: 28px;
 				float: left;
 				// background: #FEAE16;
 				padding: 5px;
 				border-radius: 20px;
+				font-size: 1.5em;
+				color: $color-black-light;
 			}
 		}
 	}
@@ -62,16 +73,25 @@
 				overflow: hidden;
 				display: flex;
 				justify-content: flex-end;
+
+				span{
+					display: flex;
+					align-items: center;
+					margin-right: 10px;
+				}
 			}
 
 			li{
 				float: left;
-				padding: 3.5%;
+				padding: 2.5%;
 				margin-right: 2%;
-				background: $color-grey-super-light;
+				background: $color-stripes;
+				color: $color-white;
 
 				&:hover{
-					@include hover_element;
+					color: $color-white;
+					background: $color-stripes;
+					cursor: pointer;
 				}
 
 				&:nth-last-child(1){margin-right: 0}
@@ -84,6 +104,7 @@
 	.description-text{
 		padding-bottom: 5%;
 		text-align: justify;
+		padding: 0 0 0 20px;
 
 		p{
 			// text-indent: 1.2em;
@@ -96,48 +117,9 @@
 	.video{
 		.video-i{
 			width: 100%;
-			iframe{width: 100%;}
-		}
-	}
-
-
-
-	.comments-i{
-		padding-top: 20px;
-		overflow: hidden;
-		img{
-			border-radius: 25px;
-			float: left;
-			margin-right: 3%;
-		}
-
-
-		.col-7{overflow: hidden;}
-		.name{
-			font-weight: bold;
-			margin-right: 2%;
-		}
-
-		.date{
-			color: $color-grey-light;
-			margin-right: 0;
-		}
-
-		.comment{
-			padding-top: 20px;
-			padding-bottom: 10px;
-
-			p{text-indent: 0;}
-			span{
-				font-weight: bold;
-				color: $color-blue;
-			}
-		}
-
-		.replay{
-			margin-bottom: 20px;
-			span{@include dotted_links;
-			}
+			iframe{
+				width: 100%;
+				height: 270px;}
 		}
 	}
 
@@ -175,6 +157,8 @@
 
 .school-news{
 	margin-right: 0!important;
+	display: flex;
+	justify-content: space-between;
 
 	.school-news-wrapper{
 
