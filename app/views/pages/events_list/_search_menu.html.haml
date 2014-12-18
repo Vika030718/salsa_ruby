@@ -1,0 +1,43 @@
+.search-menu.col-2
+  .search-menu-wrapper
+    = render 'components/city_select';
+    = render 'components/calendar';
+    %div
+      %h3 Тип события:
+      %ul
+        %li
+          %label
+            %input{type: 'checkbox'} Сальсотека
+        %li
+          %label
+            %input{type: 'checkbox'} Мастер-класс
+        %li
+          %label
+            %input{type: 'checkbox'} Фестиваль
+        %li
+          %label
+            %input{type: 'checkbox'} Вечеринка
+        %li
+          %label
+            %input{type: 'checkbox'} Все
+    %div
+      %h3 Сортировать по
+      %ul
+        %li
+          %label
+            %input{type: 'checkbox'} Рейтенгу
+        %li
+          %label
+            %input{type: 'checkbox'} Количеству просмотров
+        %li
+          %label
+            %input{type: 'checkbox'} Количеству комментариев
+        %li
+          %label
+            %input{type: 'checkbox'} По цене
+        %li
+          %label
+            %input{type: 'checkbox'} По расстоянию от моего дома
+    %div
+      = render 'components/organizer_select';
+

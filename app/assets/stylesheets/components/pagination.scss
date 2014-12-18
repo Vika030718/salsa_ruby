@@ -1,0 +1,28 @@
+.pagination{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+    li{
+      display: inline-block;
+      background-color: $color-white;
+      margin-right: 10px;
+      text-align: center;
+      height: 40px;
+      line-height: 40px;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 15px;
+
+      &:nth-last-child(1){margin-right: 0;}
+
+      &:hover{
+        background-color:$color-grey-light;
+        cursor: pointer;
+        color: $color-white;
+      }
+    }
+    .li.active{
+      background-color: $color-grey-light;
+      color: $color-white;
+    }
+  }

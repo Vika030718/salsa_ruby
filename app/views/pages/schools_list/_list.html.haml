@@ -1,6 +1,6 @@
 .school-list-wrapper.col-8
   .school-list-wrapper-border
-    .school-list-header.col-10
+    .list-header.col-10
       %h3.col-8 Найдено 24 школы
       %ul.col-2
         %li.show-map
@@ -104,10 +104,4 @@
             = render 'components/rating'
           .description
             %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita non suscipit atque nostrum odio tempore totam odit mollitia earum inventore voluptatum dolorum.
-  %ul.pagination
-    %li.active 1
-    %li 2
-    %li 3
-    %li 4
-    %li Следующая
-    %li Последняя
+  = render 'components/pagination'

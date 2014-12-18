@@ -1,0 +1,28 @@
+.event-page {
+
+  .left-column-i{
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-top: none;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3), -24px -14px 30px -24px rgba(116, 116, 116, 0.78), 23px -14px 22px -23px rgba(0, 0, 0, 0.8), 0 0px 0px rgba(0, 0, 0, 0) inset;
+  }
+
+  .right-column-i{
+    padding: 0;
+    margin-right: 0;
+
+  }
+
+  h1{font-size: 2.5em;}
+
+  h2{
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+}
