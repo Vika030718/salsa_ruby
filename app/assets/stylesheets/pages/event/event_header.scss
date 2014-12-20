@@ -1,0 +1,22 @@
+.event-header{
+    overflow: hidden;
+
+    .add-to-favorit{
+      display: flex;
+      justify-content: flex-end;
+      background: $color-grey-super-light;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 50px;
+      float: right;
+      color: $color-black-light;
+
+      &:hover{
+        background: $color-stripes;
+        color: $color-white;
+        cursor: pointer;
+      }
+    }
+  }

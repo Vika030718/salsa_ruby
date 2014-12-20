@@ -1,5 +1,4 @@
-.left-column-i{
-	.additional-information-wrapper > div{margin-top: 30px;}
+.main-column-i{
 
 	.social-networcs-links{float: right;}
 
@@ -66,37 +65,6 @@
 	.school-description-wrapper{
 		overflow: hidden;
 		padding-top: 10px;
-		.tag-wrapper {
-			padding-bottom: 3%;
-
-			ul{
-				overflow: hidden;
-				display: flex;
-				justify-content: flex-end;
-
-				span{
-					display: flex;
-					align-items: center;
-					margin-right: 10px;
-				}
-			}
-
-			li{
-				float: left;
-				padding: 2.5%;
-				margin-right: 2%;
-				background: $color-stripes;
-				color: $color-white;
-
-				&:hover{
-					color: $color-white;
-					background: $color-stripes;
-					cursor: pointer;
-				}
-
-				&:nth-last-child(1){margin-right: 0}
-			}
-		}
 	}
 
 	.school-img{width: 100%;}

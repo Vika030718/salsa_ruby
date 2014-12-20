@@ -1,0 +1,51 @@
+.photoreport-list {
+  .row{padding-top: 0;}
+  .line{margin: 0;}
+
+  h1{font-size: 2.5em;}
+
+  h2{
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .img-i{
+    width: 50%;
+    float: left;
+    padding-top: 20px;
+
+    img{width: 100%;}
+  }
+}
+
+.album_wrapper{
+  text-align: justify;
+
+  .dummy{
+    width: 178px;
+    display: inline-block;
+  }
+
+  .album-i{
+    display: inline-block;
+    width: 178px;
+    max-height: 120px;
+    overflow: hidden;
+    }
+
+  img{
+    display: inline-block;
+    width: 100%;
+    padding-right: 10px;
+    cursor: pointer;
+
+  }
+}
+
+

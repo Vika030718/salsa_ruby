@@ -1,10 +1,11 @@
-.left-column-i.wrapped
+.main-column-i.wrapped
   = render 'pages/event/event_header'
-  = render 'components/school_contacts'
   = render 'components/organizer'
+  = render 'components/school_contacts'
   .line
-  .school-description-wrapper.row
-    = render 'components/school_photo_block'
+  .event-description-wrapper.row
+    .col-10.col-xs-4
+      = image_tag('stubs/event/event1.jpg')
     .description-wrapper.col-10.col-xs-6
       = render 'components/tags'
       .description-text

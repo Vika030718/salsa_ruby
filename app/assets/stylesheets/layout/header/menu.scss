@@ -69,16 +69,20 @@ header .header-wrapper li.vnts:before {
   background-position: -60px 0px;
 }
 
-header .header-wrapper li.nws:before {
+header .header-wrapper li.pht:before {
   background-position: -90px 0px;
 }
 
-header .header-wrapper li.ll:before {
+header .header-wrapper li.nws:before {
   background-position: -120px 0px;
 }
 
+header .header-wrapper li.ll:before {
+  background-position: -150px 0px;
+}
+
 header .header-wrapper li.cntcts:before {
-background-position: -150px 0px;
+background-position: -180px 0px;
 }
 
 // .arrow-up{
@@ -104,7 +108,7 @@ background-position: -150px 0px;
 
     ul{
       display: block!important;
-      width: 511px;
+      width: 570px;
       margin: auto;
     }
 

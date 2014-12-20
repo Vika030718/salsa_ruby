@@ -1,0 +1,15 @@
+ .salsa-all-menu{
+li{
+  padding: 10px;
+  position: relative;
+  width: 86%;
+}
+
+ li.active,
+ li:hover{
+    background: $color-stripes;
+    color: $color-white;
+    cursor: pointer;
+  }
+
+}

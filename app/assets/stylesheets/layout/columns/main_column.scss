@@ -1,9 +1,16 @@
-.left-column-i{
+.main-column-i{
   background-color: $color-blocks-layout;
   position: relative!important;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  border-top: none;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3), -24px -14px 30px -24px rgba(116, 116, 116, 0.78), 23px -14px 22px -23px rgba(0, 0, 0, 0.8), 0 0px 0px rgba(0, 0, 0, 0) inset;
+
+.additional-information-wrapper > div{margin-top: 30px;}
+
 }
 
-.left-column h1{
+.main-column h1{
     margin-bottom: 0;
 }
 
