@@ -7,9 +7,56 @@
     transition: all 0.5s ease-out;
   }
   .bookmarks-i{
-  box-shadow: 0px 1px 7px #999;
-  background: $color-white;
-  img{margin: auto;}
+    margin-bottom: 1%;
+    position: relative;
+
+    img{
+      margin: auto;
+      width: 100%;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right:0;
+      bottom:0;
+      display: none;
+      background-color: rgba(0,0,0,0.5);
+      color: $color-white;
+
+      p{line-height: 1em;
+        text-align: left;
+        padding: 6%;}
+
+    }
+
+    &:hover .overlay{
+      display: block;
+      cursor: pointer; }
+  }
+}
+
+.bookmarks-school{
+  .bookmarks-i{
+    box-shadow: 0px 1px 7px #999;
+    background: $color-white;
+    height: 250px;
+    line-height: 250px;
+
+    img{
+      vertical-align: middle;
+      display: inline;
+    }
+  }
+}
+
+.bookmarks-event{
+.bookmarks-i, .dummy{
+    width: 15%;
+img{
+      display: block;
+      max-width: 150px;
+    }
   }
 
 }
